@@ -49,11 +49,11 @@ void main()
 //	int a[] = {1,2,3,4,5,6,7};									//TEST_CASE : SUCCESS
 //	int a[] = {6,5,4,3,2,1,0};									//TEST_CASE : SUCCESS
 //	int a[] = {0,0,0,0,0};										//TEST_CASE : SUCCESS
-	int a[] = {0};												//TEST_CASE : SUCCESS
+// 	int a[] = {0};												//TEST_CASE : SUCCESS
 //	int a[] = {9,0};  											//TEST_CASE : SUCCESS
 //	int a[] = {1,9,0,1,5,7};  									//TEST_CASE : SUCCESS
 //	int a[] = {24,52,25,9,98,78,65,8,0,9,3,55,30,41};  			//TEST_CASE : SUCCESS
-//	int a[] = {-2,-200,-6,8,0,0,0,0,7,777};						//TEST_CASE : SUCCESS
+	int a[] = {-2,-200,-6,8,0,0,0,0,7,777};						//TEST_CASE : SUCCESS
 	
 	int length = sizeof(a)/sizeof(int);
 	
