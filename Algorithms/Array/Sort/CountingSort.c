@@ -20,6 +20,7 @@ Bounds getBounds(int array[], int length)
 	}
 	return result;
 }
+//Counting sort for 0->range
 void countingSortWithRange(int array[], int length,int range)
 {
 	int i,j;
@@ -39,30 +40,24 @@ void countingSortWithRange(int array[], int length,int range)
 		}
 	}
 }
+//Counting Sort for lb->ub
 void countingSortWithBounds(int array[], int length,int lb, int ub)
 {
-	if(lb<0)
+	int i,j;
+	int freq[ub-lb+1];
+	for(i=0; i<=ub-lb; i++)
+		freq[i] = 0;
+	for(i=0;i<length;i++)
 	{
-		int i,j;
-		int freq[ub-lb+1];
-		for(i=0; i<=ub-lb; i++)
-			freq[i] = 0;
-		for(i=0;i<length;i++)
-		{
-			freq[ array[i] - lb ]++;
-		}
-		for(i=0,j=0; i<=ub-lb; i++)
-		{
-			while(freq[i]!=0)
-			{
-				array[j++] = i + lb;
-				freq[i]--;
-			}
-		}
+		freq[ array[i] - lb ]++;
 	}
-	else
+	for(i=0,j=0; i<=ub-lb; i++)
 	{
-		countingSortWithRange(array,length,ub);
+		while(freq[i]!=0)
+		{
+			array[j++] = i + lb;
+			freq[i]--;
+		}
 	}
 }
 void main()
