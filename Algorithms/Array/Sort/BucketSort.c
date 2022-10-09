@@ -5,7 +5,7 @@
 		Each Bucket Is Essentially A Double Linked List, And,
 		b = 1st Digit After Decimal Point Of The Max Element + 1 {inc, Zero}
 	COMPLEXITIES :
-	<1> Time  : O(b*n)	;	b = number_of_buckets, n = length_of_array
+	<1> Time  : O(b*n^2)	;	b = number_of_buckets, n = length_of_array
 	<2> Space : O(n)	;	n = length_of_array 
 */
 #include <stdio.h>
