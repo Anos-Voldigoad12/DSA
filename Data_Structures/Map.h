@@ -33,14 +33,14 @@ typedef union
 
 //Here, size refers to the sizeof(type); where 'type' is the type of the key 
 
-Map* createMap(size_t size) 									//Creates a New Map 
+Map* createMap(size_t size) 						//Creates a New Map 
 void insert(int key, int value, Map *m, size_t size)			//Insert a new Key-Value Pair into the Map
-int getValue(int key, Map *m, size_t size)						//Get Value corresponding to a Key 
-void* getKeys(Map *m, size_t size)								//Put Value at Key on the Map
+int getValue(int key, Map *m, size_t size)				//Get Value corresponding to a Key 
+void* getKeys(Map *m, size_t size)					//Put Value at Key on the Map
 short int containsKey(int key, Map *m, size_t size) 			//Returns true if the Key is present in the Map
 short int containsValue(int value, Map *m, size_t size) 		//Returns true if the Value is present in the Map
-void displayMap(Map *m, size_t size)							//Prints the Map
-void destroyMap(Map **m, size_t size)							//Destroys the Map
+void displayMap(Map *m, size_t size)					//Prints the Map
+void destroyMap(Map **m, size_t size)					//Destroys the Map
 
 
 //CharMap Functions
