@@ -24,6 +24,7 @@ void* peekIter(iterator* iter); //Returns the data of the current node
 void forEachIter(iterator* iter, void (*fn)(void *)); //Applies a void function fn(void *) on each data on the iterator 
 iter_node* findIter(iterator* iter, void* ref, int (*cmp)(void *, void *)); //Finds the node which causes the function: void cmp(void* data, void *ref) to be true
 void reduceIter(iterator* iter, void* result, void (*op)(void*, void*)); //Applies the function void op(void* result, void *data) on each data on the iterator  
+void reverseIter(iterator *iter); //Reverses the iterator
 
 void addIter(iterator* iter, void *data)
 {
