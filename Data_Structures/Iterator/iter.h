@@ -140,10 +140,3 @@ void reduceIter(iterator* iter, void* result, void (*op)(void*, void*))
 		}
 	}
 }
-void swapIterNode(iter_node** i1, iter_node** i2)
-{
-	iter_node* temp = *i1;
-	*i1 = *i2;
-	*i2 = temp;
-}
-
