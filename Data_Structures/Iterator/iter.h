@@ -140,3 +140,21 @@ void reduceIter(iterator* iter, void* result, void (*op)(void*, void*))
 		}
 	}
 }
+void swapIterNode(iter_node** i1, iter_node** i2)
+{
+	iter_node* temp = *i1;
+	*i1 = *i2;
+	*i2 = temp;
+}
+void reverseIter(iterator *iter)
+{
+	if(iter->start)
+	{
+		iter_node *cur;
+		for(cur=iter->start;cur!=NULL;cur=cur->prev)
+		{
+			swapIterNode(&(cur->prev),&(cur->next));
+		}
+		swapIterNode(&(iter->start),&(iter->end));
+	}
+}
