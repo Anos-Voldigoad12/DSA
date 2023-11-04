@@ -8,12 +8,12 @@ typedef struct iter_node
 	void *data;
 	struct iter_node *prev, *next;
 }iter_node;
-* typedef struct
+typedef struct
 {
 	iter_node* start;
 	iter_node* cur;
 	iter_node* end;
-}iterator; *
+}iterator;
 ```
 ## Functions ##
 1. iterator* newIterator(): Creates a new iterator
