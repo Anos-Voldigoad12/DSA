@@ -19,7 +19,7 @@ typedef struct
 1. iterator* newIterator(): Creates a new iterator
 2. void addIter(iterator* iter, void *data): Adds a new node to the iterator
 3. void removeIterFront(iterator* iter): Removes a node from the front of the iterator
-4. void removeIterRear(iterator* iter); //Removes a node from the rear of the iterator
+4. void removeIterRear(iterator* iter): Removes a node from the rear of the iterator
 5. void* nextIter(iterator* iter): Returns the data of the current node, and moves to the next node
 6. void* prevIter(iterator* iter): Returns the data of the current node, and moves to the prev node
 7. void* peekIter(iterator* iter): Returns the data of the current node
