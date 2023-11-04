@@ -24,7 +24,7 @@ typedef struct map
 }map;
 ```
 ## Functions ##
-1. ```C map* newMap(int (*genKey)(void*), int (*cmp)(void*, void*), void (*cpyKey)(void*, void*), void (*cpyData)(void*, void*))```: Used to create a new Map
+1. ```Cmap* newMap(int (*genKey)(void*), int (*cmp)(void*, void*), void (*cpyKey)(void*, void*), void (*cpyData)(void*, void*))```: Used to create a new Map
 2. ```C void addItem(map* m, void* key, void* data)```: Used to add a new Key-Value pair to the Map
 3. ```C void* getVal(map* m , void* key)```: Get the value corresponding to a given Key in the Map
 4. ```C void** getKeys(map *m)```: Returns an array of Keys of the type void *
