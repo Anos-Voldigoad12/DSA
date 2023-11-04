@@ -2,6 +2,7 @@
 Iterators in C is similar to Iterators in Python with JS functions like forEach(), find() and reduce().
 
 ## The Iterator Structure ##
+```C
 typedef struct iter_node
 {
 	void *data;
@@ -13,7 +14,7 @@ typedef struct iter_node
 	iter_node* cur;
 	iter_node* end;
 }iterator; *
-
+```
 ## Functions ##
 1. iterator* newIterator(): Creates a new iterator
 2. void addIter(iterator* iter, void *data): Adds a new node to the iterator
