@@ -30,8 +30,8 @@ typedef struct map
 4. ```void** getKeys(map *m)```: Returns an array of Keys of the type void *
 5. ```void** getVals(map *m)```: Returns an array of Values of the type void *
 6. ```void removeItem(map* m , void* key)```: Remove the item having the given Key
-7. ```void _cleanMap(map *m)```: Destroy unused Map Blocks
-8. ```int containsKey(map* m, void* key)```: Checks if a Key is present in the Map
+7. ```int containsKey(map* m, void* key)```: Checks if a Key is present in the Map
+8. ```void _cleanMap(map *m)```: Destroy unused Map Blocks
 ## Utility Functions ##
 1. For Integers:
    1. ```int genKeyFromInt(void *data)```: Generates a 0-9 key from Integer
