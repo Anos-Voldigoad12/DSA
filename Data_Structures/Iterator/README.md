@@ -25,6 +25,6 @@ typedef struct
 7. void* peekIter(iterator* iter): Returns the data of the current node
 
 8. void forEachIter(iterator* iter, void (*fn)(void *)): Applies a void function fn(void *) on each data on the iterator 
-9. iter_node* findIter(iterator* iter, void* ref, int (*cmp)(void *, void *)): Finds the node which causes the function: void cmp(void* data, void *ref) to be true
-10. void reduceIter(iterator* iter, void* result, void (*op)(void*, void*)): Applies the function void op(void* result, void *data) on each data on the iterator  
+9. iter_node* findIter(iterator* iter, void* ref, int (* cmp)(void *, void *)): Finds the node which causes the function: void cmp(void * data, void *ref) to be true
+10. void reduceIter(iterator* iter, void* result, void (* op)(void*, void*)): Applies the function void op(void* result, void *data) on each data on the iterator  
 11. void reverseIter(iterator *iter): Reverses the iterator
