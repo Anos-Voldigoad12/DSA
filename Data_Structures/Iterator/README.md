@@ -16,7 +16,7 @@ typedef struct
 }iterator;
 ```
 ## Functions ##
-1. * iterator* newIterator() * : Creates a new iterator
+1. iterator* newIterator() : Creates a new iterator
 2. void addIter(iterator* iter, void *data): Adds a new node to the iterator
 3. void removeIterFront(iterator* iter): Removes a node from the front of the iterator
 4. void removeIterRear(iterator* iter): Removes a node from the rear of the iterator
