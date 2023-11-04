@@ -1,20 +1,20 @@
-#Iterator#
+# Iterator #
 Iterators in C is similar to Iterators in Python with JS functions like forEach(), find() and reduce().
 
-##The Iterator Structure##
+## The Iterator Structure ##
 typedef struct iter_node
 {
 	void *data;
 	struct iter_node *prev, *next;
 }iter_node;
-*typedef struct
+* typedef struct
 {
 	iter_node* start;
 	iter_node* cur;
 	iter_node* end;
-}iterator;*
+}iterator; *
 
-##Functions##
+## Functions ##
 1. iterator* newIterator(): Creates a new iterator
 2. void addIter(iterator* iter, void *data): Adds a new node to the iterator
 3. void removeIterFront(iterator* iter): Removes a node from the front of the iterator
