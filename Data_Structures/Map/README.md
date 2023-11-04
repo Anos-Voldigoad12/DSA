@@ -25,12 +25,13 @@ typedef struct map
 ```
 ## Functions ##
 1. ```map* newMap(int (*genKey)(void*), int (*cmp)(void*, void*), void (*cpyKey)(void*, void*), void (*cpyData)(void*, void*))```: Used to create a new Map
-2. ```void addItem(map* m, void* key, void* data)```: Used to add a new Key-Value pair to the Map
+2. ```void putItem(map* m, void* key, void* data)```: Used to put a new Key-Value pair into the Map
 3. ```void* getVal(map* m , void* key)```: Get the value corresponding to a given Key in the Map
 4. ```void** getKeys(map *m)```: Returns an array of Keys of the type void *
 5. ```void** getVals(map *m)```: Returns an array of Values of the type void *
 6. ```void removeItem(map* m , void* key)```: Remove the item having the given Key
 7. ```void _cleanMap(map *m)```: Destroy unused Map Blocks
+8. ```int containsKey(map* m, void* key)```: Checks if a Key is present in the Map
 ## Utility Functions ##
 1. For Integers:
    1. ```int genKeyFromInt(void *data)```: Generates a 0-9 key from Integer
