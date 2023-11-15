@@ -22,11 +22,11 @@ typedef struct HeterList
 1. ```HeterList* newHeterList()```: Creates a new HeterList 
 2. ```void addHeterNodeFront(HeterList* h, void* data, void (*cpyData)(void *, void *), void (*printData)(void *))```: Adds a new node at front
 3. ```void addHeterNodeRear(HeterList* h, void* data, void (*cpyData)(void *, void *), void (*printData)(void *))```: Adds a new node at rear
-4. ```void addHeterNode(HeterList* h, int index, void* data, void (*cpyData)(void *, void *), void (*printData)(void *))```: Appends a node at a specified index
+4. ```void addHeterNode(HeterList* h, int index, void* data, void (*cpyData)(void *, void *), void (*printData)(void *))```: Appends a node at a specified index **{PREFERRED}** 
 5. ```void appendHeterList(HeterList* h, HeterList* h2)```: Appends a HeterList at the tail of another HeterList 
 6. ```void removeHeterNodeFront(HeterList* h)```: Remove a node from the front
 7. ```void removeHeterNodeRear(HeterList* h)```: Remove a node from the rear
-8. ```void removeHeterNode(HeterList* h, int index)```: Remove a node from a specified index
+8. ```void removeHeterNode(HeterList* h, int index)```: Remove a node from a specified index **{PREFERRED}** 
 9. ```void reverseHeterList(HeterList* h)```: Reverse a HeterList
 10. ```heter_node* getNodeAtFront(HeterList* h, int index)```: Get the node at a specified index from front (starts from 0)
 11. ```heter_node* getNodeAtRear(HeterList* h, int index)```: Get the node at a specified index from rear (starts from 1)
