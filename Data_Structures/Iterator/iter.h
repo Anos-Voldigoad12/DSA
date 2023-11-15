@@ -17,6 +17,7 @@ iterator* newIterator(); //Creates a new iterator
 void addIter(iterator* iter, void *data); //Adds a new node to the iterator
 void removeIterFront(iterator* iter); //Removes a node from the front of the iterator
 void removeIterRear(iterator* iter); //Removes a node from the rear of the iterator
+int hasNextIter(iterator* iter); //Checks if the iterator has a next node
 void* nextIter(iterator* iter); //Returns the data of the current node, and moves to the next node
 void* prevIter(iterator* iter); //Returns the data of the current node, and moves to the prev node
 void* peekIter(iterator* iter); //Returns the data of the current node
@@ -65,6 +66,10 @@ void removeIterRear(iterator* iter)
 		if(iter->cur==temp) iter->cur = iter->end;
 		free(temp);
 	}
+}
+int hasNextIter(iterator* iter)
+{
+	return (iter->next!=NULL);
 }
 void* nextIter(iterator* iter)
 {
