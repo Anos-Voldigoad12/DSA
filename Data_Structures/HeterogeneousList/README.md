@@ -30,7 +30,7 @@ typedef struct HeterList
 9. ```void reverseHeterList(HeterList* h)```: Reverse a HeterList
 10. ```heter_node* getNodeAtFront(HeterList* h, int index)```: Get the node at a specified index from front (starts from 0)
 11. ```heter_node* getNodeAtRear(HeterList* h, int index)```: Get the node at a specified index from rear (starts from 1)
-12. ```heter_node* getNodeAt(HeterList* h, int index)```: Get the node at a specidied index; negative index is allowed ** {PREFERRED} ** 
+12. ```heter_node* getNodeAt(HeterList* h, int index)```: Get the node at a specidied index; negative index is allowed **{PREFERRED}** 
 13. ```void printHeterList(HeterList* h)```: Prints the HeterList
 14. ```iterator* heterList2Iter(HeterList* h)```: Converts the HeterList to an Iterator
 ## Utility Functions ##
