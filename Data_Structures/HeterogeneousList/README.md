@@ -1,6 +1,6 @@
 # Heterogeneous List #
 Heterogeneous List (or HeterList) is a data structure that is inspired from Lists in Python. It is a list of heterogeneous data i.e., each node can have a diffent type of data.
-Requires: iter.h(https://github.com/Anos-Voldigoad12/DSA/blob/main/Data_Structures/Iterator/iter.h)
+Requires: [iter.h](https://github.com/Anos-Voldigoad12/DSA/blob/main/Data_Structures/Iterator/iter.h)
 ## The HeterList Structure ##
 ```C
 typedef struct heter_node
